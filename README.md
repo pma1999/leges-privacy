@@ -5,7 +5,7 @@ consolidada del BOE para Android.
 
 - URL: https://pma1999.github.io/leges-privacy/
 - Aplicación: `io.github.pma1999.leges` en Google Play
-- Contacto: correo de soporte indicado en la ficha de Google Play
+- Contacto: pablomiguelargudo@gmail.com
 
 ## Contenido
 
