@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Política de privacidad de Leges, lector independiente de legislación consolidada del BOE para Android.">
+  <meta name="robots" content="index, follow">
+  <title>Política de privacidad · Leges</title>
+  <style>
+    :root {
+      --paper: #faf7f2;
+      --surface: #ffffff;
+      --ink: #241f1c;
+      --muted: #5c534d;
+      --accent: #8c1d2f;
+      --line: #ddd3c9;
+      --mark: #f3ece2;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #171310;
+        --surface: #1f1a16;
+        --ink: #f4efe8;
+        --muted: #c2b8ae;
+        --accent: #e8aab2;
+        --line: #3b322c;
+        --mark: #241e19;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 17px/1.65 Georgia, "Iowan Old Style", "Times New Roman", serif;
+      text-rendering: optimizeLegibility;
+    }
+    main {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 3rem 1.25rem 5rem;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+    }
+    .brand {
+      color: var(--accent);
+      font-size: .8rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin: 0 0 .75rem;
+    }
+    h1 {
+      font-size: clamp(2rem, 7vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: -.01em;
+      margin: 0 0 .75rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      line-height: 1.3;
+      margin: 2.5rem 0 .6rem;
+      scroll-margin-top: 1rem;
+    }
+    p, li { margin: 0 0 .9rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: .4rem; }
+    .meta { color: var(--muted); font-size: .95rem; margin: 0; }
+    .lede { font-size: 1.08rem; }
+    a { color: var(--accent); text-underline-offset: .15em; }
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+    .notice {
+      border-left: 4px solid var(--accent);
+      background: var(--mark);
+      padding: .9rem 1.1rem;
+      margin: 1.75rem 0;
+      color: var(--ink);
+      font-size: .97rem;
+    }
+    .notice p:last-child { margin-bottom: 0; }
+    nav.toc {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 1rem 1.25rem;
+      margin: 0 0 2.5rem;
+      font-size: .95rem;
+    }
+    nav.toc h2 {
+      font-size: .78rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 .6rem;
+    }
+    nav.toc ol {
+      margin: 0;
+      padding-left: 1.1rem;
+      columns: 2;
+      column-gap: 2rem;
+    }
+    nav.toc li { margin-bottom: .35rem; break-inside: avoid; }
+    nav.toc a { text-decoration: none; }
+    nav.toc a:hover, nav.toc a:focus { text-decoration: underline; }
+    .data {
+      width: 100%;
+      border-collapse: collapse;
+      margin: .5rem 0 1.25rem;
+      font-size: .95rem;
+    }
+    .data th, .data td {
+      text-align: left;
+      vertical-align: top;
+      padding: .55rem .7rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .data th { width: 34%; font-weight: normal; color: var(--muted); }
+    footer {
+      border-top: 1px solid var(--line);
+      margin-top: 3.5rem;
+      padding-top: 1.25rem;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    footer p { margin: 0 0 .4rem; }
+    @media (max-width: 34rem) {
+      nav.toc ol { columns: 1; }
+      .data th { width: 42%; }
+    }
+    @media print {
+      :root { --paper: #fff; --surface: #fff; --ink: #000; --muted: #333; --accent: #000; --line: #999; --mark: #f2f2f2; }
+      body { font-size: 11pt; }
+      main { max-width: none; padding: 0; }
+      nav.toc { display: none; }
+      h2 { break-after: avoid; }
+      a { color: #000; }
+      a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="brand">Leges</p>
+    <h1>Política de privacidad</h1>
+    <p class="meta">Última actualización: 28 de octubre de 2026</p>
+  </header>
+
+  <p class="lede">
+    Leges es una aplicación de Android para leer legislación consolidada del Boletín Oficial
+    del Estado. Esta página explica qué datos trata la aplicación, dónde se guardan y qué
+    puedes hacer con ellos.
+  </p>
+
+  <div class="notice">
+    <p>
+      Leges es una aplicación independiente. <strong>No es una aplicación oficial del BOE</strong>
+      ni está patrocinada por la Agencia Estatal Boletín Oficial del Estado.
+    </p>
+  </div>
+
+  <nav class="toc" aria-label="Índice de la política">
+    <h2>Contenido</h2>
+    <ol>
+      <li><a href="#responsable">Responsable del tratamiento</a></li>
+      <li><a href="#dispositivo">Datos guardados en el dispositivo</a></li>
+      <li><a href="#copia">Copia de seguridad de Android</a></li>
+      <li><a href="#boe">Conexiones con el BOE</a></li>
+      <li><a href="#base">Base jurídica</a></li>
+      <li><a href="#notificaciones">Notificaciones</a></li>
+      <li><a href="#terceros">Analítica, anuncios y cuentas</a></li>
+      <li><a href="#conservacion">Conservación y eliminación</a></li>
+      <li><a href="#derechos">Tus derechos</a></li>
+      <li><a href="#menores">Menores</a></li>
+      <li><a href="#cambios">Cambios en esta política</a></li>
+      <li><a href="#aviso">Aviso legal del BOE</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="responsable">1. Responsable del tratamiento</h2>
+  <p>
+    El responsable del tratamiento es <strong>Pablo Miguel Argudo</strong>, desarrollador
+    independiente de Leges. Para cualquier consulta sobre privacidad puedes utilizar el correo
+    de soporte que figura en la ficha de Google Play de la aplicación.
+  </p>
+  <p>
+    Leges no tiene cuentas de usuario, por lo que no necesitas identificarte para usarla.
+  </p>
+
+  <h2 id="dispositivo">2. Datos guardados en el dispositivo</h2>
+  <p>
+    Leges guarda en el almacenamiento privado de la aplicación, y solo en tu dispositivo:
+  </p>
+  <ul>
+    <li>las leyes que descargas y sus metadatos;</li>
+    <li>las notas, subrayados, marcadores y colecciones que creas;</li>
+    <li>el historial de búsquedas recientes dentro de la app;</li>
+    <li>tus preferencias de lectura y de la aplicación.</li>
+  </ul>
+  <p>
+    Estos datos <strong>no se envían a servidores del desarrollador</strong>. El desarrollador
+    no tiene acceso a ellos y no los usa con fines publicitarios, estadísticos ni de perfilado.
+  </p>
+
+  <h2 id="copia">3. Copia de seguridad de Android</h2>
+  <p>
+    Si tienes activada la copia de seguridad de Android, el sistema operativo puede incluir la
+    base de datos de estudio de Leges (notas, subrayados, marcadores, colecciones y búsquedas
+    recientes) en la copia que se guarda en tu cuenta de Google. Esa copia la gestiona Google
+    conforme a sus propias condiciones; el desarrollador no tiene acceso a ella.
+  </p>
+  <p>
+    Puedes desactivar la copia de seguridad o borrar sus copias desde los ajustes de Android y
+    desde tu cuenta de Google.
+  </p>
+
+  <h2 id="boe">4. Conexiones con el BOE</h2>
+  <p>
+    Para buscar y descargar normas, la aplicación realiza peticiones HTTPS a la API de datos
+    abiertos del BOE (<a href="https://www.boe.es" rel="noopener">www.boe.es</a>). Esas
+    peticiones incluyen el término de búsqueda o el identificador de la norma que solicitas y
+    tu dirección IP, que es necesaria para que el servidor pueda responder.
+  </p>
+  <p>
+    La Agencia Estatal Boletín Oficial del Estado procesa esas peticiones conforme a su propia
+    política de privacidad. Leges no intermedia en esa comunicación, no mantiene un servidor
+    propio y no almacena las consultas en ningún sistema del desarrollador.
+  </p>
+
+  <h2 id="base">5. Base jurídica</h2>
+  <p>
+    Las peticiones al BOE se realizan porque tú inicias una búsqueda o abres una norma; su base
+    jurídica es la ejecución de esa solicitud (artículo 6.1.b del RGPD) y el interés legítimo en
+    prestar el servicio (artículo 6.1.f). Las notificaciones locales se basan en tu
+    consentimiento (artículo 6.1.a), que puedes retirar en cualquier momento desde los ajustes
+    de Android.
+  </p>
+  <p>
+    No se toman decisiones automatizadas ni se elaboran perfiles con tus datos.
+  </p>
+
+  <h2 id="notificaciones">6. Notificaciones</h2>
+  <p>
+    Si concedes el permiso de notificaciones, Leges genera avisos <strong>locales</strong> en tu
+    dispositivo para informarte de cambios en las leyes que has descargado. No se utiliza ningún
+    servicio de notificaciones externo ni se envía ningún dato a terceros con este fin.
+  </p>
+  <p>
+    Puedes denegar o retirar el permiso en cualquier momento; la aplicación sigue funcionando
+    sin los avisos.
+  </p>
+
+  <h2 id="terceros">7. Analítica, anuncios y cuentas</h2>
+  <p>
+    Leges no incluye cuentas de usuario, anuncios, herramientas de analítica, rastreadores ni
+    SDK de publicidad. No se recopilan identificadores de publicidad ni se comparte información
+    con redes publicitarias.
+  </p>
+
+  <h2 id="conservacion">8. Conservación y eliminación</h2>
+  <table class="data">
+    <caption class="meta" style="text-align:left;padding-bottom:.4rem;">Qué se conserva y durante cuánto tiempo</caption>
+    <tbody>
+      <tr><th>Leyes descargadas</th><td>Hasta que las eliminas en la app o borras sus datos.</td></tr>
+      <tr><th>Notas, subrayados, marcadores y colecciones</th><td>Hasta que los eliminas o desinstalas la aplicación.</td></tr>
+      <tr><th>Búsquedas recientes</th><td>Hasta que las borras o desinstalas la aplicación.</td></tr>
+      <tr><th>Peticiones al BOE</th><td>No se almacenan en sistemas del desarrollador.</td></tr>
+      <tr><th>Copia de seguridad de Android</th><td>La gestiona tu cuenta de Google; puedes borrarla desde allí.</td></tr>
+    </tbody>
+  </table>
+  <p>
+    Puedes borrar las leyes descargadas desde la propia aplicación y eliminar todos los datos
+    locales borrando el almacenamiento de la app o desinstalándola.
+  </p>
+
+  <h2 id="derechos">9. Tus derechos</h2>
+  <p>
+    Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y
+    portabilidad previstos en el RGPD. Como los datos de estudio se guardan solo en tu
+    dispositivo y no existe una cuenta, la forma más directa de ejercerlos es consultar,
+    modificar o borrar esa información desde la propia aplicación.
+  </p>
+  <p>
+    Para cualquier otra cuestión puedes escribir al correo de soporte de la ficha de Google Play.
+    Si consideras que el tratamiento no se ajusta a la normativa, puedes presentar una
+    reclamación ante la Agencia Española de Protección de Datos
+    (<a href="https://www.aepd.es" rel="noopener">www.aepd.es</a>).
+  </p>
+
+  <h2 id="menores">10. Menores</h2>
+  <p>
+    Leges no está dirigida a menores de 13 años y no recopila conscientemente datos de menores.
+  </p>
+
+  <h2 id="cambios">11. Cambios en esta política</h2>
+  <p>
+    Esta política puede actualizarse para reflejar cambios en la aplicación o en la normativa.
+    La fecha de la última revisión aparece al principio de esta página y en la pantalla de
+    privacidad de la aplicación. Los cambios sustanciales se anunciarán en las notas de la
+    versión correspondiente.
+  </p>
+
+  <h2 id="aviso">12. Aviso legal del BOE</h2>
+  <p>
+    Los textos consolidados que muestra Leges son de carácter meramente informativo. La versión
+    oficial y auténtica es la publicada en el Boletín Oficial del Estado. La aplicación se basa
+    en datos de la Agencia Estatal Boletín Oficial del Estado
+    (<a href="https://www.boe.es" rel="noopener">www.boe.es</a>) y no es una aplicación oficial
+    ni está patrocinada por ella.
+  </p>
+
+  <h2 id="contacto">13. Contacto</h2>
+  <p>
+    Para consultas sobre privacidad, utiliza el correo de soporte que aparece en la ficha de
+    Google Play de Leges.
+  </p>
+
+  <footer>
+    <p>Leges · Lector independiente de legislación consolidada del BOE.</p>
+    <p>Última actualización: 28 de octubre de 2026.</p>
+  </footer>
+</main>
+</body>
+</html>
